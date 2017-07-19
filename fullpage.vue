@@ -2,7 +2,7 @@
 	<div class="cp-fullpage" :style="{'background': containerBg}">
 		<div class="center-vertical">
 			<div class="middle">
-				<app-heading line small></app-heading>
+				<appheading line small></appheading>
 				<div class="container-fluid">
 					<slot></slot>
 				</div>
@@ -53,7 +53,7 @@
 				type: String,
 				required: false
 			},
-			bacckgroundimage: {
+			backgroundimage: {
 				type: String,
 				required: false
 			}
