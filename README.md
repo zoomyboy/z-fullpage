@@ -26,12 +26,24 @@ mix.webpackConfig({
 # Example template:
 ```
 <fullpage>
-    Fullpage content
+	<div slot="content">
+		<statusbar layout="october"></statusbar>
+		<!-- Your content here -->
+	</div>
+	<div slot="footer">
+		<fullpagefooter (dark|bright)>
+			<!-- Your footer content here -->
+		</fullpagefooter>
+	</div>
 </fullpage>
 ```
 
+The footer slot is optional. If you dont like a footer - just remove that part. The footer will be a sticky footer that is always 
+on the bottom of the page.  
+Also the statusbar is optional.
+
 # Props:
-### Background Color
+### backgroundcolor
 Set the Background Color of the body:
 ```
 <fullpage backgroundcolor="#00ff00">
