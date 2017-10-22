@@ -81,9 +81,7 @@
 			}
 		},
 		components: {
-			appheading: function(r) {
-				require(['z-ui/heading/appheading.vue'], r);
-			}
+			appheading: require('z-ui/heading/appheading.vue')
 		},
 		computed: {
 			containerBg: function() {
