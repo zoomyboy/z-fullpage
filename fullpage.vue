@@ -80,6 +80,11 @@
 				required: false
 			}
 		},
+		components: {
+			appheading: function(r) {
+				require(['z-ui/heading/appheading.vue'], r);
+			}
+		},
 		computed: {
 			containerBg: function() {
 				if (this.backgroundcolor) {
