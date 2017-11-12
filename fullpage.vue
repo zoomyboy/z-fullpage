@@ -4,10 +4,8 @@
 			<div class="middle">
 				<div class="real-middle-container">
 					<div class="real-middle">
-						<appheading line small></appheading>
-						<div class="container-fluid">
-							<slot name="content"></slot>
-						</div>
+						<slot name="header"></slot>
+						<slot name="content"></slot>
 					</div>
 				</div>
 			</div>
