@@ -3,7 +3,7 @@
 		<div class="center-vertical">
 			<div class="middle">
 				<div class="real-middle-container">
-					<div class="real-middle">
+					<div :class="['real-middle', {'has-padding': padding}]">
 						<slot name="header"></slot>
 						<slot name="content"></slot>
 					</div>
@@ -53,7 +53,7 @@
 						#page-heading {
 							margin-bottom: 0 !important;
 						}
-						.container-fluid {
+						&.has-padding #content-container {
 							padding: 10px;
 						}
 						@media screen and (max-width: 840px) {
@@ -76,10 +76,11 @@
 			backgroundimage: {
 				type: String,
 				required: false
+			},
+			padding: {
+				type: Boolean,
+				default: true
 			}
-		},
-		components: {
-			appheading: require('z-ui/heading/appheading.vue')
 		},
 		computed: {
 			containerBg: function() {
